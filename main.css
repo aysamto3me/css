@@ -1,0 +1,1143 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family:Centrale Sans Regular;
+    scroll-behavior: smooth;
+
+}
+
+@import url(//db.onlinewebfonts.com/c/80fbcdc3c1a1df525b781d517d365c05?family=Freight+Text);
+@font-face {font-family: "Freight Text"; src: url("//db.onlinewebfonts.com/t/80fbcdc3c1a1df525b781d517d365c05.eot"); src: url("//db.onlinewebfonts.com/t/80fbcdc3c1a1df525b781d517d365c05.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/80fbcdc3c1a1df525b781d517d365c05.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/80fbcdc3c1a1df525b781d517d365c05.woff") format("woff"), url("//db.onlinewebfonts.com/t/80fbcdc3c1a1df525b781d517d365c05.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/80fbcdc3c1a1df525b781d517d365c05.svg#Freight Text") format("svg"); }
+@import url(//db.onlinewebfonts.com/c/1e1fc2743ffa8e513ad245affdd1be1d?family=Centrale+Sans+Regular);
+@import url(//db.onlinewebfonts.com/c/31e5c4d8a575a3706cec9be2acab9b07?family=Centrale+Sans+Book);
+@font-face {font-family: "Centrale Sans Regular"; src: url("//db.onlinewebfonts.com/t/1e1fc2743ffa8e513ad245affdd1be1d.eot"); src: url("//db.onlinewebfonts.com/t/1e1fc2743ffa8e513ad245affdd1be1d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1e1fc2743ffa8e513ad245affdd1be1d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1e1fc2743ffa8e513ad245affdd1be1d.woff") format("woff"), url("//db.onlinewebfonts.com/t/1e1fc2743ffa8e513ad245affdd1be1d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1e1fc2743ffa8e513ad245affdd1be1d.svg#Centrale Sans Regular") format("svg"); }
+@font-face {font-family: "Centrale Sans Book"; src: url("//db.onlinewebfonts.com/t/31e5c4d8a575a3706cec9be2acab9b07.eot"); src: url("//db.onlinewebfonts.com/t/31e5c4d8a575a3706cec9be2acab9b07.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/31e5c4d8a575a3706cec9be2acab9b07.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/31e5c4d8a575a3706cec9be2acab9b07.woff") format("woff"), url("//db.onlinewebfonts.com/t/31e5c4d8a575a3706cec9be2acab9b07.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/31e5c4d8a575a3706cec9be2acab9b07.svg#Centrale Sans Book") format("svg"); }
+
+
+
+#navbar{
+    width: 100%;
+    position: fixed;
+    padding: 10px;
+    z-index: 1000;
+    top: -150px;
+    transition: 0.5s;
+    height: 100px;
+    
+   
+
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+    position: relative;
+}
+
+.container3{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.logo{
+    float: left;
+    position: relative;
+}
+
+.logo a img {
+    width: 10%;
+    z-index: 1000;
+    margin-top: -20px;
+}
+
+
+.logo1{
+    float: left;
+    position: absolute;
+    display: none;
+    
+}
+
+.logo1 a img {
+    width: 10%;
+    z-index: 10000;
+}
+
+.nav-list{
+    float: right;
+   margin-top: -90px;
+    padding-left: 0;
+    list-style: none;
+    position: relative;
+    margin-right: 100px;
+}
+
+
+nav ul li{
+    float: left;
+    margin-right: 15px;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    padding: 15px;
+    position: relative;
+    display: block;
+    font-size: 15px;
+    color:#000;
+    font-family: 'Helvetica 45 Light', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-decoration: none !important;
+    transition: 0.5s all ease-in-out , transform;
+  }
+
+  nav ul li a .span1{
+      border-bottom: 3px solid #fff;
+      display: block;
+      margin-top: 15px;
+      transition: 0.8s ease-in-out;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .spanloop{
+    animation: bottom;
+    animation-duration: 4s;
+
+  }
+
+  
+
+  @keyframes bottom {
+    from{width: 0%;border-bottom: 3px solid black;}
+    to{width: 100%;border-bottom: 3px solid #fff;}
+
+      
+  }
+
+  nav ul li a:hover{
+      color: #fff;
+      transform: scale(1.1);
+      
+      
+
+  }
+
+  .test{
+      top: 0 !important;
+      background-color: #f90;
+      transition: 0.8s;
+      opacity: 0.8;
+      z-index: 10000;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+      
+  }
+
+  .test6{
+    top: 0 !important;
+    background-color: #f90;
+    transition: 0.8s;
+    opacity: 0.8;
+    z-index: 10000;
+    display: none ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+  
+.respnav{
+    width: 100%  ;  
+    position: fixed ;
+    padding: 10px  ;
+    z-index: 10000000;
+    top: -150px ;
+    transition: 0.5s ;
+}
+
+
+.responsive{
+    
+    display: none;
+    width: 100%;
+    text-align: right;
+    right: 10px;
+    position: relative;
+    z-index: 100000000;
+    top: 0;
+    
+
+}
+.responsive span{
+    padding: 15px;
+}
+
+
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10000000000000000;
+    top: 0;
+  left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+    
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .overlay-content li{
+      display: block;
+  }
+
+  .overlay a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    line-height: 30px;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+    
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+
+.mycont{
+    width: 100%;
+    position: absolute;
+    background-color: #818181;
+}
+  .mybg{
+      background-color: #000;
+      mask-image: linear-gradient(to bottom, black, transparent);
+      -webkit-mask-image: linear-gradient( to bottom, black, transparent);
+      background-image: url('https://i.ibb.co/Jvfcvyd/IMG-5902.jpg') !important;
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      height: 500px;
+      width: 100%;
+      top: 0;
+      min-width: auto;
+      z-index: 0;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      float: right;
+      
+  }
+
+  .myinfo{
+    position: absolute ;
+    z-index: 1;
+float: left;
+    top: 50%;
+    margin-left: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.myinfo h2, span{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: 'Helvetica 45 Light', sans-serif;
+    color: #f90;
+    letter-spacing: 10px;
+
+}
+
+
+.myskill{
+    margin-left: 5%;
+    position: absolute;
+    margin-top: 30%;
+    color: #f90;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Helvetica 45 Light', sans-serif;
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-weight: 800;
+    animation: myskillanimate;
+    animation-duration: 4s;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+@keyframes myskillanimate {
+    0%{margin-left:-100% ;letter-spacing: 3px;    }
+    100%{margin-left: 5%; letter-spacing: 3px; }
+}
+
+@keyframes mysocialanimate {
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+
+
+@keyframes mysocialimg {
+    0%{margin-left:-100%;}
+    100%{margin-left: 5%; }
+}
+
+
+
+.mysocial{
+    position: absolute;
+    top: 70%;
+    margin-left: 5%;
+    word-spacing: 100px;
+    animation: mysocialimg;
+    animation-duration: 4s;
+    transition: 0.5s ease-in-out ;
+
+}
+
+.mysocial img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    animation: mysocialanimate;
+    animation-duration: 4s;
+    transition: 0.5s ease-in-out; 
+
+}
+
+.mysocial img:hover{
+    transform: scale(1.5);
+}
+
+
+.myabout{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    top: 100%;
+    max-width: 100%;
+    max-height: 500px;
+    
+    
+}
+
+.fadescroll{
+    
+    animation: fadescrol;
+    animation-duration: 4s;
+    opacity: 1 !important;
+}
+
+.fadescroll2{
+    
+    animation: fadescrol2;
+    animation-duration: 4s;
+    opacity: 1 !important;
+}
+
+@keyframes fadescrol {
+    from{left:-50%;}
+    to{left: 0%;}
+}
+
+@keyframes fadescrol2 {
+    from{right:-50%;}
+    to{right:0%;}
+}
+
+.container1{
+    width: 50%;
+    height: 500px;
+    float: left;
+    position: relative;
+    padding: 10px;
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+   
+
+
+.aboutimg{
+    float: right;
+    border: 20px solid rgb(255, 255, 255);
+    width: 400px;
+    text-align: center;
+    margin-right: 50px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+
+
+
+
+
+.aboutimg img{
+    width: 400px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-top: -35px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+
+.container2{
+    width: 50%;
+    float: right;
+    height: 500px;
+    opacity: 0;
+    position: relative;
+}
+
+
+.abouttext{
+    width: 100%;
+    top: 10%;
+    padding: 20px;
+    position: relative;
+}
+
+.abtxt{
+    color: #f90;
+    font-size: 20px;
+    word-spacing: 10px;
+    line-height: 40px;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Helvetica 45 Light', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.myfav{
+    margin-top: 25px;
+    color: rgb(14, 13, 13);
+    font-size: 16px;
+    word-spacing: 10px;
+    line-height: 40px;
+    text-transform: capitalize;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px #fff;
+    font-family: 'Helvetica 45 Light', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.typed-cursor {
+    display: none;
+}
+
+.mysk{
+    position: relative;
+    text-align: center;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.mywork{
+    position: relative;
+    width: 81.5%;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 125px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mywork h2{
+    padding: 20px;
+    font-size: 26px;
+    letter-spacing: 10px;
+    color: #f90;
+
+}
+
+#slider{
+    margin-top: 3%;
+}
+.content-area{
+    position: relative;
+    width:100%;
+    height: 200px;
+}
+
+.content-area:hover{
+    transform: scale(0.9);
+    transition: 0.6s;
+}
+
+
+
+.custom-overlay{
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    text-align: center;
+    transition: all 400ms ease-in-out;
+    height: 100%;
+  
+}
+
+
+
+.custom-overlay:hover{
+    opacity: 0.8;
+    animation-name: itemi;
+    animation-duration: 0.5s;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+.content-area:hover{
+    filter: drop-shadow(8px 8px 10px gray) grayscale(100%);
+}
+
+.custom-overlay i{
+    background-color: #fff;
+    position: absolute;
+    padding: 20px;
+    font-size: 4rem;
+    text-align: center;
+    left: 135px;
+
+}
+
+
+
+@keyframes itemi {
+    from{bottom: 0; transform: rotate(0deg);}
+    to{top: 50px;transform: rotate(360deg); opacity: 1;}
+    
+}
+
+
+
+.mysk h2{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px;
+    font-size: 26px;
+    letter-spacing: 10px;
+    color: #f90;
+
+}
+
+.serviceBox{ text-align: center;left: 500%;margin-top: 60px;position: relative;z-index: 1; margin-bottom: 21px;}
+.serviceBox .service-icon{width: 78px;height: 78px;border-radius:3px;background: #fff;margin: 0 auto;position: absolute;top: -34px;left: 0;right: 0;z-index: 1;transition: all 0.3s ease-out 0s;}
+.serviceBox:hover .service-icon{transform: rotate(45deg);}
+.serviceBox .service-icon span{display: inline-block;width: 60px;height: 60px;line-height: 60px;border-radius:3px;background: #727cb6;font-size: 30px;color: #fff;margin: auto;position: absolute;top: 0;left: 0;bottom: 0;right: 0;transition: all 0.3s ease-out 0s;}
+.serviceBox .service-icon span i{transition: all 0.3s ease-out 0s;}
+.serviceBox:hover .service-icon span i{transform: rotate(-45deg);}
+.serviceBox .service-content{background: #fff;border: 1px solid #e7e7e7;border-radius: 3px;padding: 55px 15px;position: relative;}
+.serviceBox .service-content:before{content: "";display: block;width: 80px;height: 80px;border: 1px solid #e7e7e7;border-radius: 3px;margin: 0 auto;position: absolute;top: -37px;left: 0;right: 0;z-index: -1;transition: all 0.3s ease-out 0s;}
+.serviceBox:hover .service-content:before{transform: rotate(45deg);}
+.serviceBox .title{font-size: 17px;font-weight: 500;color: #324545;text-transform: uppercase;margin: 0 0 25px 0;position: relative;transition: all 0.3s ease-out 0s;}
+.serviceBox:hover .title{color: #727cb6;}
+.serviceBox .description{font-size: 14px;font-weight: 500;line-height: 24px;margin-bottom: 0;}
+.serviceBox .read-more{display: block;width: 40px;height: 40px;line-height: 38px;border-radius: 50%;background: #fff;border: 1px solid #e7e7e7;font-size: 14px;color: #c4c2c2;margin: 0 auto;position: absolute;bottom: -17px;left: 0; right: 0;transition: all 0.3s ease-out 0s;}
+.serviceBox .read-more:hover{border: 1px solid #727cb6;color: #727cb6;text-decoration: none;}
+.serviceBox.green .service-icon span{ background: #008b8b; }
+.serviceBox.blue .service-icon span{ background: #3498db; }
+.serviceBox.orange .service-icon span{ background: #e67e22; }
+.serviceBox.green:hover .title{ color: #008b8b; }
+.serviceBox.blue:hover .title{ color: #3498db; }
+.serviceBox.orange:hover .title{ color: #e67e22; }
+
+.serviceBox:hover .read-more{border: 1px solid #727cb6;color: #727cb6;}
+.serviceBox.green:hover .read-more{border: 1px solid #008b8b;color: #008b8b;}
+.serviceBox.blue:hover .read-more{border: 1px solid #3498db;color: #3498db;}
+.serviceBox.orange:hover .read-more{border: 1px solid #e67e22;color: #e67e22;}
+
+
+.skillslide{
+    left: 0;
+    transition: 1.8s;
+    animation-name: serviceanimate;
+    animation-duration: 5s;
+  
+}
+
+
+/* Click the image one by one to see the different layout */
+
+/* Owl Carousel */
+
+
+  
+.itemeffect{
+    transition: 0.2s;
+    animation-name: itemi;
+    animation-duration: 0.5s;
+}
+
+
+
+  
+
+@keyframes serviceanimate {
+    0%{left:200%;}
+    25%{left:0%;}
+    50%{left:-600%;}
+    100%{left:0%;}
+}
+
+
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+
+  @media screen and (max-width:409px) and (min-width:100px) {
+
+    #navbar{
+        display: none !important ;
+    }
+      
+      .nav-list{
+          display: none;
+      }
+
+      .responsive{
+          display: block !important;
+      }
+
+      .responsive span{
+          margin-top: 20px;
+          transition: 0.5s;
+          color: #000;
+      }
+
+      .logo{
+          width: 100%;
+          display: none !important;
+      }
+
+      .logo a img{
+          width: 15%;
+          
+      }
+
+      .logo1{
+          display: block;
+      }
+
+      .test{
+          display: block !important;
+      }
+
+      .test6{
+          display: none !important;
+      }
+
+      #navbar span{
+          display: none;
+      }
+
+
+      .mybg{
+          width: 100%;
+          top: 0 !important;
+          position: absolute !important;
+
+
+      }
+
+      .myinfo{
+          margin-top: -15%;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px !important;
+          position: relative;  
+        }
+
+      .myinfo h2, span{
+          font-size: 18px !important;
+        
+
+      }
+
+      .myskill{
+          margin-top: 93% !important;
+          font-size: 12px;
+          max-width: 350px;
+          position: relative;
+
+      }
+
+      .mysocial{
+        word-spacing:50px;
+        max-width: 350px;
+        margin-top: 0% !important;
+        position: relative;
+
+
+      }
+
+      .mysocial img{
+          height: auto;
+      }
+
+      .myabout{
+          display: block;
+          width: 100%;
+      }
+
+      .container1{
+          height: auto;
+          display: block;
+          width: 100%;
+      }
+
+      .aboutimg{
+          width: 100%;
+          margin-right: 0px;
+      }
+
+      .aboutimg img{
+          width: 100%;
+          margin-left: 0px;
+          margin-top: -20px;
+      }
+
+      .container2{
+          height: auto;
+          width: 100%;
+      }
+
+      .abtxt{
+          font-size: 12px;
+          text-shadow: none;
+
+      }
+
+      .myfav{
+          font-size: 11px;
+      }
+
+    
+    .mysk{
+        position: relative;
+       margin-top:100% !important;
+        left: 0;
+    }
+
+  
+    .mywork{
+        position: relative;
+        margin-left: 37px;
+        text-align: center;
+        margin-top: 10% !important;        
+    }
+
+    #slider{
+        width: 100%;
+        position: relative;
+        top: 80px;
+        text-align: center !important;
+
+    }
+
+    .content-area{
+        width: 60% !important;
+        margin: auto;
+    }
+
+    .custom-overlay i{
+        left: 50px !important;
+        font-size: 1.5rem !important;
+        padding: 15px;
+        
+    }
+
+    
+
+
+  }
+
+
+
+
+
+  @media screen and (max-width:570px) and (min-width : 410px){
+
+    #navbar{
+        display: none !important;
+    }
+      
+      .nav-list{
+          display: none;
+      }
+
+      .responsive{
+          display: block !important;
+      }
+
+      .responsive span{
+          margin-top: 20px;
+          transition: 0.5s;
+          color: #000;
+      }
+
+      .logo{
+          width: 100%;
+          display: none !important;
+      }
+
+      .logo a img{
+          width: 15%;
+      }
+
+      .logo1{
+          display: block;
+      }
+
+      .test{
+          display: block !important;
+      }
+
+      .test6{
+          display: none !important;
+      }
+
+      #navbar span{
+          display: none;
+      }
+
+
+      .mybg{
+          width: 100%;
+          top: 0px !important;
+          position: absolute !important;
+
+      }
+
+      .myinfo{
+          margin-top: -20%;
+      }
+
+
+    
+
+      .myinfo h2, span{
+          font-size: 18px !important;
+          font-weight: 900 !important;
+      }
+
+      .myskill{
+          margin-top:85%;
+          font-size: 12px;
+          font-weight: 900;
+          max-width: 350px;
+          position: relative;
+          text-shadow: none;
+
+      }
+
+      .mysocial{
+        word-spacing:50px;
+        max-width: 350px;
+        margin-top:0%;
+        position: relative;
+
+      }
+
+      .mysocial img{
+          height: auto;
+      }
+
+      .myabout{
+          display: block;
+          width: 100%;
+      }
+
+      .container1{
+          height: auto;
+          display: block;
+          width: 100%;
+      }
+
+      .aboutimg{
+          width: 100%;
+          margin-right: 0px;
+      }
+
+      .aboutimg img{
+          width: 100%;
+          margin-left: 0px;
+          margin-top: -20px;
+      }
+
+      .container2{
+          height: auto;
+          width: 100%;
+      }
+
+      .abtxt{
+          font-size: 12px;
+          text-shadow: none;
+      }
+
+      .myfav{
+          font-size: 11px;
+      }
+
+    
+    .mysk{
+        position: relative;
+       margin-top:100% !important;
+        left: 0;
+    }
+
+  
+    .mywork{
+        position: relative;
+        margin-left: 37px;
+        text-align: center;
+        margin-top: 10% !important;        
+    }
+
+    #slider{
+        width: 100%;
+        position: relative;
+        top: 80px;
+        text-align: center !important;
+
+    }
+
+    .content-area{
+        width: 60% !important;
+        margin: auto;
+    }
+
+    .custom-overlay i{
+        left: 50px !important;
+        font-size: 1.5rem !important;
+        padding: 15px;
+        
+    }
+
+    
+
+
+  }
+
+
+
+
+
+  @media screen and (max-width:768px) and (min-width:530px){
+     
+    #navbar{
+        display: none !important;
+    }
+      
+      .nav-list{
+          display: none;
+      }
+
+      .responsive{
+          display: block !important;
+      }
+
+      .respan{
+          display: block;
+      }
+
+     
+      .responsive span{
+          margin-top: 20px;
+          transition: 0.5s;
+          color: #000;
+      }
+
+      .logo{
+          width: 100%;
+      }
+
+      .logo a img{
+          width: 15%;
+      }
+
+      .logo1{
+          display: block !important;
+      }
+
+      .test{
+          display: block !important;
+      }
+
+      .test6{
+          display: none !important;
+      }
+
+      #navbar span{
+          display: none;
+      }
+
+
+      .mybg{
+          width: 100%;
+          margin-top: -250px !important;
+
+      }
+
+      .myinfo{
+          top: 25%;
+      }
+
+
+      .myinfo h2, span{
+          font-size: 16px;
+      }
+
+      .myskill{
+          top: 13%;
+          font-size: 12px;
+          max-width: 100%;
+      }
+
+      .mysocial{
+        word-spacing:50px;
+        max-width: 350px;
+        z-index: 100000;
+        top: 37%;
+      }
+
+      .mysocial img{
+          height: auto;
+          margin-top: -10%;
+
+      }
+
+      .myabout{
+          display: block;
+          width: 100%;
+          margin-top: 25%;
+      }
+
+      .container1{
+          height: auto;
+          display: block;
+          width: 100%;
+      }
+
+      .aboutimg{
+          width: 100%;
+          margin-right: 0px;
+      }
+
+      .aboutimg img{
+          width: 100%;
+          margin-left: 0px;
+          margin-top: -20px;
+      }
+
+      .container2{
+          height: auto;
+          width: 100%;
+      }
+
+      .abtxt{
+          font-size: 12px;
+      }
+
+      .myfav{
+          font-size: 11px;
+      }
+
+      .skillcont {
+        width: 100%;
+        display: block;
+          left: 0;
+          position: absolute;
+    }
+
+    
+
+    .mysk{
+        position: relative;
+        margin-top:130%;
+        left: 0;
+    }
+
+  
+    .mywork{
+        position: relative;
+        margin-left: 37px;
+        text-align: center;
+        margin-top: 380%;
+        
+    }
+
+    #slider{
+        width: 100%;
+        position: relative;
+        top: 80px;
+    }
+
+    .content-area{
+        width: 60%;
+        margin: auto;
+    }
+
+    .custom-overlay i{
+        left: 80px;
+        font-size: 2.5rem;
+        
+    }
+
+      
+
+  }
+
+
+  
+
+
+
+
+
+  
+  
+  
